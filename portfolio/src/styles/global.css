@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* Reset básico */
 * {
   margin: 0;
@@ -6,7 +8,8 @@
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  
 }
 
 /* ===== NAVBAR ===== */
@@ -14,8 +17,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #111;
-  color: white;
+  background: #303030;
+  color: rgb(255, 255, 255);
 }
 
 .navbar-inner {
@@ -34,13 +37,37 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  position: relative;
   text-decoration: none;
+  color: #faa913;
 }
 
-.nav-links a.active {
-  text-decoration: underline;
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(to right, #cdb17d, #e2a637, #db8534);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
 }
+
+.nav-links a:hover::before {
+  transform: scaleX(2);
+}
+
+.nav-links[data-animation="to-left"] a::before {
+  transform-origin: right;
+}
+.nav-links[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
 
 /* ===== LAYOUT ===== */
 .container {
@@ -54,7 +81,7 @@ body {
 .footer {
   text-align: center;
   padding: 1rem;
-  background: #f2f2f2;
+  background: #cfc9c9;
 }
 
 /* ===== PROJECTS GRID ===== */
@@ -69,7 +96,8 @@ body {
 
 /* ===== PROJECT CARD ===== */
 .project-card {
-  background: #ffffff;
+  background: #363535;
+  border-bottom: #3c4ac2 solid 4px;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -81,17 +109,17 @@ body {
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 16px 35px rgba(245, 161, 4, 0.342);
 }
 
-/* ===== TEXT ===== */
+/* ===== TEXT PROJECT CARD ===== */
 .project-card h3 {
   font-size: 1.3rem;
-  color: #111;
-}
+  color: #ffffff;
+} 
 
 .project-card p {
-  color: #555;
+  color: #eb7e25;
   line-height: 1.5;
 }
 
@@ -117,12 +145,12 @@ body {
   align-self: flex-start;
   text-decoration: none;
   font-weight: 500;
-  color: #2563eb;
+  color: #eb7e25;
   transition: color 0.2s ease;
 }
 
 .project-card a:hover {
-  color: #1d4ed8;
+  color: #fafafa;
 }
 
 /* ===== LAYOUT FULL HEIGHT ===== */
@@ -140,4 +168,11 @@ body,
 
 .container {
   flex: 1;
+}
+
+/* ===== HERO IMG ===== */
+.hero-image {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 100%;
 }

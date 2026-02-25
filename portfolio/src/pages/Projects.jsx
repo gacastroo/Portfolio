@@ -4,11 +4,14 @@ import projects from "../components/data/projects";
 
 const Projects = () => {
   return (
-    <section className="projects-grid">
-      {projects.map(project => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
-    </section>
+    <>
+      <h2>Projects</h2>
+      <section className="projects-grid">
+        {projects.map(project => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </section>
+    </>
   );
 };
 

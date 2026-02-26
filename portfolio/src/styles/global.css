@@ -175,4 +175,10 @@ body,
   margin: 2rem auto;
   width: 100%;
   max-width: 100%;
+  border-radius: 1.56rem;
+}
+
+.hero-image:hover {
+  transform: scale(1.12);
+  transition: transform 0.3s ease;
 }

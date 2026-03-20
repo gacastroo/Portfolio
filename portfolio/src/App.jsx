@@ -1,23 +1,28 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/layout/Layout";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import Aboutme from "./pages/Aboutme";
+import "./styles/global.css";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Home from "./components/sections/Home";
+import About from "./components/sections/About";
+import Skills from "./components/sections/Skills";
+import Work from "./components/sections/Work";
+import Services from "./components/sections/Services";
+import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/aboutme" element={<Aboutme />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <>
+      <Navbar />
+      <main className="main">
+        <Home />
+        <About />
+        <Skills />
+        <Work />
+        <Services />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }
 

@@ -38,69 +38,99 @@ export const skillsData = [
 
 export const workData = [
   {
-    id: 1, filter: "web",
-    img: "",
-    title: "Web Design",
+    id: 1,
+    filter: "web",
+    img: "", // puedes poner la URL de una captura si quieres
+    title: "LoreWeaver",
     details: {
       subtitle: "Web",
-      title: "The services we provide for design",
-      description: "Two smartphones displaying a sleek, dark-themed dashboard interface",
-      created: "22 Apr 2025", tech: "React, CSS", role: "Frontend", link: "#",
+      title: "LoreWeaver – Generador de historias interactivas",
+      description:
+          "Aplicación web para gestionar personajes, eventos y universos en historias interactivas.",
+      created: "2025",
+      tech: "React, JavaScript, CSS",
+      role: "Full Stack",
+      link: "https://github.com/gacastroo/LoreWeaver",
     },
   },
   {
-    id: 2, filter: "app",
+    id: 2,
+    filter: "web",
     img: "",
-    title: "App Design",
-    details: {
-      subtitle: "App",
-      title: "Mobile App Landing Design & App Maintain",
-      description: "A stylish burger restaurant mobile app interface displayed on two smartphones",
-      created: "15 Apr 2025", tech: "React Native", role: "Frontend", link: "#",
-    },
-  },
-  {
-    id: 3, filter: "design",
-    img: "",
-    title: "Brand Design",
-    details: {
-      subtitle: "Design",
-      title: "Logo Design Creativity & Application",
-      description: "Three smartphone screens displaying a beautifully designed travel booking application",
-      created: "10 Apr 2025", tech: "Figma", role: "Designer", link: "#",
-    },
-  },
-  {
-    id: 4, filter: "app",
-    img: "",
-    title: "App Design",
-    details: {
-      subtitle: "App",
-      title: "Mobile App Landing Design & Services",
-      description: "Modern workout website interface design featuring a bold and energetic visual layout",
-      created: "4 Apr 2025", tech: "HTML, CSS", role: "Frontend", link: "#",
-    },
-  },
-  {
-    id: 5, filter: "web",
-    img: "",
-    title: "Brand Design",
+    title: "Portfolio Personal",
     details: {
       subtitle: "Web",
-      title: "Design for Technology & Services",
-      description: "An app design that is clean, functional, and ideal for gamers",
-      created: "28 Mar 2025", tech: "HTML, CSS", role: "Frontend", link: "#",
+      title: "Portfolio – Presentación de proyectos",
+      description:
+          "Portfolio personal desarrollado con React para mostrar habilidades y proyectos.",
+      created: "2025",
+      tech: "React, CSS",
+      role: "Frontend",
+      link: "https://github.com/gacastroo/Portfolio",
     },
   },
   {
-    id: 6, filter: "design",
+    id: 3,
+    filter: "backend",
     img: "",
-    title: "Web Design",
+    title: "Escape_Room API",
     details: {
-      subtitle: "Design",
-      title: "App for Technology & Services",
-      description: "An app design that is clean and modern, making food browsing and ordering easy",
-      created: "20 Mar 2025", tech: "HTML, CSS", role: "Frontend", link: "#",
+      subtitle: "API",
+      title: "Escape_Room – Gestión de salas temáticas",
+      description:
+          "Backend para gestionar salas y partidas de Escape Room en tiempo real.",
+      created: "2025",
+      tech: "Java, Spring Boot, PostgreSQL",
+      role: "Backend",
+      link: "https://github.com/gacastroo/Escape_Room",
+    },
+  },
+  {
+    id: 4,
+    filter: "web",
+    img: "",
+    title: "PaginaPort",
+    details: {
+      subtitle: "Web",
+      title: "PaginaPort – Proyecto HTML/CSS/JS",
+      description:
+          "Sitio web simple creado como práctica de desarrollo frontend.",
+      created: "2025",
+      tech: "HTML, CSS, JavaScript",
+      role: "Frontend",
+      link: "https://github.com/gacastroo/PaginaPort",
+    },
+  },
+  {
+    id: 5,
+    filter: "backend",
+    img: "",
+    title: "LibreriaProyect",
+    details: {
+      subtitle: "Backend",
+      title: "LibreriaProyect – Gestión de librerías",
+      description:
+          "Proyecto backend en Java mostrando lógica de servidor y manejo de datos.",
+      created: "2025",
+      tech: "Java",
+      role: "Backend",
+      link: "https://github.com/gacastroo/LibreriaProyect",
+    },
+  },
+  {
+    id: 6,
+    filter: "automation",
+    img: "",
+    title: "Selenium UI Test Demo",
+    details: {
+      subtitle: "automation",
+      title: "selenium-ui-test-herokuapp-demo",
+      description:
+          "Pruebas automatizadas con Selenium sobre una demo en Heroku.",
+      created: "2025",
+      tech: "Java, Selenium",
+      role: "QA / Test Automation",
+      link: "https://github.com/gacastroo/selenium-ui-test-herokuapp-demo",
     },
   },
 ];
@@ -108,29 +138,47 @@ export const workData = [
 export const servicesData = [
   {
     icon: "uil uil-web-grid",
-    title: "Web\nDesigner",
+    title: "Full Stack\nDeveloper",
     modal: {
-      title: "Web Designer",
-      description: "I offer services with more than 3 years of experience with quality work to clients and companies",
-      items: ["User Interface Development", "Web Page Development", "Interactive UX/UI Creations", "Company Brand Positioning", "Design and Mockup of products"],
-    },
-  },
-  {
-    icon: "uil uil-arrow",
-    title: "UI/UX\nDesigner",
-    modal: {
-      title: "UI/UX Designer",
-      description: "I offer services with more than 5 years of experience with quality work to clients and companies",
-      items: ["Usability Testing", "User Research", "Interaction Design", "Responsive Design", "Branding & Style Guides", "Accessibility", "A/B Testing"],
+      title: "Full Stack Developer",
+      description: "Desarrollo aplicaciones web completas con experiencia en frontend y backend, creando soluciones eficientes y escalables.",
+      items: [
+        "Desarrollo Frontend con React y Angular",
+        "Backend con Java y Spring Boot",
+        "Diseño e integración de APIs REST",
+        "Gestión de bases de datos MySQL/PostgreSQL",
+        "Optimización de rendimiento y escalabilidad"
+      ],
     },
   },
   {
     icon: "uil uil-edit",
-    title: "Branding\nDesigner",
+    title: "UI/UX\nDevelopment",
     modal: {
-      title: "Branding Designer",
-      description: "I offer services with more than 2 years of experience with quality work to clients and companies",
-      items: ["Competitive Analysis", "Accessibility Design", "Project Management", "Iteration and Refinement", "Presenting Designs", "User Research", "Surveys & Questionnaires"],
+      title: "UI/UX Development",
+      description: "Diseño interfaces intuitivas y experiencias de usuario fluidas para aplicaciones web modernas.",
+      items: [
+        "Diseño responsivo con HTML, CSS y JavaScript",
+        "Prototipos interactivos y mockups",
+        "Pruebas de usabilidad y A/B testing",
+        "Guías de estilo y consistencia visual",
+        "Mejora continua de la experiencia de usuario"
+      ],
+    },
+  },
+  {
+    icon: "uil uil-briefcase",
+    title: "Project\nManagement",
+    modal: {
+      title: "Project Management",
+      description: "Organizo y gestiono proyectos de software asegurando calidad, eficiencia y entrega puntual.",
+      items: [
+        "Planificación de tareas y sprints",
+        "Control de versiones y Git/GitHub",
+        "Documentación de proyectos",
+        "Coordinación con equipos multidisciplinarios",
+        "Iteración y refinamiento de proyectos"
+      ],
     },
   },
 ];

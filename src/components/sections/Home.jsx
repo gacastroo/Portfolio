@@ -1,11 +1,9 @@
 import React from "react";
-import multitaskImg from "/src/assets/img/multitask.png";
 
 const Home = () => (
     <section className="home" id="home">
       <div className="home-container container">
 
-        {/* Social */}
         <div className="home-social">
           <div className="home-social-links">
             <a href="https://github.com/gacastroo" target="_blank" rel="noreferrer"
@@ -16,31 +14,22 @@ const Home = () => (
                className="home-social-link" aria-label="LinkedIn">
               <i className="uil uil-linkedin" />
             </a>
-            <a href="/src/assets/CV/CV_GuillermoCastro.pdf" download
+            <a href="/CV_GuillermoCastro.pdf" download
                className="home-social-link" aria-label="Download CV">
               <i className="uil uil-file-alt"/>
             </a>
-
           </div>
         </div>
 
-        {/* Columna derecha: ilustración + marco circular */}
         <div className="home-right">
-
-          {/* Ilustración flotante */}
           <div className="home-float-img">
-            <img src={multitaskImg} alt="developer illustration" />
+            <img src="/multitask.png" alt="developer illustration" />
           </div>
 
-          {/* Marco circular con badges */}
           <div className="profile-wrapper">
             <div className="profile-image-glow" />
             <div className="profile-image-frame">
               <div className="profile-image" id="profileImage">
-                {/*
-                Para añadir tu foto sustituye este bloque por:
-                <img src="/src/assets/img/tu-foto.jpg" alt="Guillermo Castro" />
-              */}
                 <div className="profile-placeholder">
                   <i className="uil uil-user" />
                 </div>
@@ -51,9 +40,7 @@ const Home = () => (
               <i className="uil uil-server badge-icon" />
               <div className="badge-content">
                 <span className="badge-title">Spring Boot</span>
-                <span className="badge-libs">
-                  REST APIs · Microservices · JPA
-                </span>
+                <span className="badge-libs">REST APIs · Microservices · JPA</span>
               </div>
             </div>
 
@@ -61,9 +48,7 @@ const Home = () => (
               <i className="uil uil-react badge-icon" />
               <div className="badge-content">
                 <span className="badge-title">React</span>
-                <span className="badge-libs">
-                  Hooks · State · TypeScript
-                </span>
+                <span className="badge-libs">Hooks · State · TypeScript</span>
               </div>
             </div>
 
@@ -71,15 +56,12 @@ const Home = () => (
               <i className="uil uil-docker badge-icon" />
               <div className="badge-content">
                 <span className="badge-title">DevOps</span>
-                <span className="badge-libs">
-                Docker · Git · CI/CD
-              </span>
+                <span className="badge-libs">Docker · Git · CI/CD</span>
               </div>
             </div>
-        </div>
           </div>
+        </div>
 
-        {/* Texto principal */}
         <div className="home-data">
           <h1 className="home-title">
             Hi, I&rsquo;m <span className="home-title-name">Guillermo Castro</span>
@@ -88,33 +70,33 @@ const Home = () => (
           <p className="home-description">
             Web developer building secure solutions across backend, Frontend, and DevOps. Committed to collaboration and problem-solving.
           </p>
-          <a href={"#about"} className="button">
+          <a href="#about" className="button">
             <i className="uil uil-user button-icon" />
             More About Me!
           </a>
         </div>
 
-        {/* Info inferior */}
         <div className="my-info">
-          <a href={"#contact"}>
-          <div className="info-item">
+          <a href="#contact">
+            <div className="info-item">
               <i className="uil uil-envelope-edit info-icon" />
-            <div>
-              <h3 className="info-title">Email</h3>
-              <span className="info-subtitle">guillermoandca@gmail.com</span>
+              <div>
+                <h3 className="info-title">Email</h3>
+                <span className="info-subtitle">guillermoandca@gmail.com</span>
+              </div>
             </div>
-          </div>
           </a>
 
           <a href="https://github.com/gacastroo">
-          <div className="info-item">
-            <i className="uil uil-github info-icon" />
-            <div>
-              <h3 className="info-title">GitHub</h3>
-              <span className="info-subtitle">gacastroo</span>
+            <div className="info-item">
+              <i className="uil uil-github info-icon" />
+              <div>
+                <h3 className="info-title">GitHub</h3>
+                <span className="info-subtitle">gacastroo</span>
+              </div>
             </div>
-          </div>
           </a>
+
           <div className="info-item">
             <i className="uil uil-map-marker info-icon" />
             <div>
@@ -123,10 +105,6 @@ const Home = () => (
             </div>
           </div>
         </div>
-      </div>
-
-      <div>
-
       </div>
     </section>
 );

@@ -40,7 +40,7 @@ export const workData = [
   {
     id: 1,
     filter: "web",
-    img: "/src/assets/img/LoreWeb.png", // puedes poner la URL de una captura si quieres
+    img: "/LoreWeb.png", // puedes poner la URL de una captura si quieres
     title: "LoreWeaver",
     details: {
       subtitle: "Web",

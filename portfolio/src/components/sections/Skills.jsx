@@ -40,13 +40,6 @@ const Skills = () => {
                   <div className="skills-data" key={skill.name}>
                     <div className="skills-titles">
                       <h3 className="skills-name">{skill.name}</h3>
-                      <span className="skills-number">{skill.level}%</span>
-                    </div>
-                    <div className="skills-bar">
-                      <span
-                        className="skills-percentage"
-                        style={{ width: `${skill.level}%` }}
-                      />
                     </div>
                   </div>
                 ))}

@@ -8,7 +8,6 @@ import Skills from "./components/sections/Skills";
 import Work from "./components/sections/Work";
 import Services from "./components/sections/Services";
 import Contact from "./components/sections/Contact";
-import TechMarquee from "./components/ui/TechMarquee.jsx";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
       <Navbar />
       <main className="main">
         <Home />
-          <TechMarquee />
         <About />
         <Skills />
         <Work />

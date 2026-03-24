@@ -16,10 +16,11 @@ const Home = () => (
                className="home-social-link" aria-label="LinkedIn">
               <i className="uil uil-linkedin" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer"
-               className="home-social-link" aria-label="Twitter">
-              <i className="uil uil-twitter" />
+            <a href="/src/assets/CV/CV_GuillermoCastro.pdf" download
+               className="home-social-link" aria-label="Download CV">
+              <i className="uil uil-file-alt"/>
             </a>
+
           </div>
         </div>
 
@@ -85,10 +86,9 @@ const Home = () => (
           </h1>
           <h3 className="home-subtitle">Full Stack Developer</h3>
           <p className="home-description">
-            I have high level experience in web design, development knowledge
-            and producing quality work.
+            Web developer building secure solutions across backend, Frontend, and DevOps. Committed to collaboration and problem-solving.
           </p>
-          <a href="#about" className="button">
+          <a href={"#about"} className="button">
             <i className="uil uil-user button-icon" />
             More About Me!
           </a>
@@ -96,13 +96,17 @@ const Home = () => (
 
         {/* Info inferior */}
         <div className="my-info">
+          <a href={"#contact"}>
           <div className="info-item">
-            <i className="uil uil-envelope-edit info-icon" />
+              <i className="uil uil-envelope-edit info-icon" />
             <div>
               <h3 className="info-title">Email</h3>
               <span className="info-subtitle">guillermoandca@gmail.com</span>
             </div>
           </div>
+          </a>
+
+          <a href="https://github.com/gacastroo">
           <div className="info-item">
             <i className="uil uil-github info-icon" />
             <div>
@@ -110,6 +114,7 @@ const Home = () => (
               <span className="info-subtitle">gacastroo</span>
             </div>
           </div>
+          </a>
           <div className="info-item">
             <i className="uil uil-map-marker info-icon" />
             <div>
@@ -118,7 +123,6 @@ const Home = () => (
             </div>
           </div>
         </div>
-
       </div>
 
       <div>

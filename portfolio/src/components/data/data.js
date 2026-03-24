@@ -2,8 +2,8 @@ export const skillsData = [
   {
     id: "frontend",
     icon: "uil uil-brackets-curly",
-    title: "Frontend Developer",
-    subtitle: "More than 4 years",
+    title: "Panel Sistemas Informáticos S.L.",
+    subtitle: "",
     skills: [
       { name: "HTML", level: 90 },
       { name: "CSS", level: 80 },
@@ -15,7 +15,7 @@ export const skillsData = [
     id: "design",
     icon: "uil uil-swatchbook",
     title: "UI / UX Design",
-    subtitle: "More than 5 years",
+    subtitle: "",
     skills: [
       { name: "Figma", level: 90 },
       { name: "Sketch", level: 80 },
@@ -26,7 +26,7 @@ export const skillsData = [
     id: "backend",
     icon: "uil uil-server-network",
     title: "Backend Developer",
-    subtitle: "More than 2 years",
+    subtitle: "",
     skills: [
       { name: "Node.js", level: 75 },
       { name: "Python", level: 60 },
@@ -40,7 +40,7 @@ export const workData = [
   {
     id: 1,
     filter: "web",
-    img: "", // puedes poner la URL de una captura si quieres
+    img: "/src/assets/img/LoreWeb.png", // puedes poner la URL de una captura si quieres
     title: "LoreWeaver",
     details: {
       subtitle: "Web",
@@ -50,7 +50,7 @@ export const workData = [
       created: "2025",
       tech: "React, JavaScript, CSS",
       role: "Full Stack",
-      link: "https://github.com/gacastroo/LoreWeaver",
+      link: "https://lore-weaver-1zpq.vercel.app/",
     },
   },
   {
@@ -63,7 +63,7 @@ export const workData = [
       title: "Portfolio – Presentación de proyectos",
       description:
           "Portfolio personal desarrollado con React para mostrar habilidades y proyectos.",
-      created: "2025",
+      created: "2026",
       tech: "React, CSS",
       role: "Frontend",
       link: "https://github.com/gacastroo/Portfolio",
@@ -79,7 +79,7 @@ export const workData = [
       title: "Escape_Room – Gestión de salas temáticas",
       description:
           "Backend para gestionar salas y partidas de Escape Room en tiempo real.",
-      created: "2025",
+      created: "2026",
       tech: "Java, Spring Boot, PostgreSQL",
       role: "Backend",
       link: "https://github.com/gacastroo/Escape_Room",
@@ -111,7 +111,7 @@ export const workData = [
       title: "LibreriaProyect – Gestión de librerías",
       description:
           "Proyecto backend en Java mostrando lógica de servidor y manejo de datos.",
-      created: "2025",
+      created: "2024",
       tech: "Java",
       role: "Backend",
       link: "https://github.com/gacastroo/LibreriaProyect",

@@ -3,11 +3,7 @@ import { workData } from "/src/components/data/data.js";
 
 const categoryIcon = {
     web:    { icon: "uil uil-globe",           label: "Web",    color: "#00d9b8" },
-<<<<<<< HEAD
     backend:    { icon: "uil uil-server-network",  label: "Backend",    color: "#5b9cf6" },
-=======
-    backend:    { icon: "uil uil-mobile-android",  label: "Backend",    color: "#5b9cf6" },
->>>>>>> portfolio/main
     automation: { icon: "uil uil-vector-square",   label: "Automation", color: "#c084fc" },
 };
 
@@ -98,11 +94,7 @@ const DetailWindow = ({ item, onClose }) => {
                     }
                     <div className="fs-preview-overlay">
                         <a href={item.details.link} className="fs-preview-btn" target="_blank" rel="noreferrer">
-<<<<<<< HEAD
                             <i className="uil uil-external-link-alt" /> Open link
-=======
-                            <i className="uil uil-external-link-alt" /> Live demo
->>>>>>> portfolio/main
                         </a>
                     </div>
                 </div>
@@ -128,11 +120,7 @@ const DetailWindow = ({ item, onClose }) => {
 const Work = () => {
     const [filter, setFilter]    = useState("all");
     const [openItem, setOpenItem] = useState(null);
-<<<<<<< HEAD
     const [statusMsg, setStatus] = useState(`${workData.length} items · Ready`);
-=======
-    const [statusMsg, setStatus] = useState("6 items · Ready");
->>>>>>> portfolio/main
     const [time, setTime]        = useState("");
     const filters = ["all", "web", "backend", "automation"];
 

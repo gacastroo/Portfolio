@@ -34,15 +34,9 @@ const Contact = () => {
               <span className="ctc-link-label">github.com/gacastroo</span>
               <i className="uil uil-arrow-up-right ctc-link-arrow" />
             </a>
-<<<<<<< HEAD
             <a href="https://www.linkedin.com/in/guillermo-castro-abarcaa/" target="_blank" rel="noreferrer" className="ctc-link">
               <span className="ctc-link-icon"><i className="uil uil-linkedin" /></span>
               <span className="ctc-link-label">linkedin.com/in/guillermo-castro-abarcaa</span>
-=======
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="ctc-link">
-              <span className="ctc-link-icon"><i className="uil uil-linkedin" /></span>
-              <span className="ctc-link-label">Guillermo Castro</span>
->>>>>>> portfolio/main
               <i className="uil uil-arrow-up-right ctc-link-arrow" />
             </a>
           </div>

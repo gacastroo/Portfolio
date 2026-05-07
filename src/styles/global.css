@@ -1132,7 +1132,6 @@ button, input { border: none; outline: none; }
   .home-social { position: static; }
   .my-info { display: none; }
 }
-<<<<<<< HEAD
 
 /* =============================================
    LAYOUT REVISION — elongated sections with a natural left flow
@@ -1381,5 +1380,3 @@ button, input { border: none; outline: none; }
     align-items: flex-start;
   }
 }
-=======
->>>>>>> portfolio/main

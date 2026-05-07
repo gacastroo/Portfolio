@@ -1,9 +1,4 @@
 import React, { useState, useEffect } from "react";
-<<<<<<< HEAD
-=======
-import { NavLink } from "react-router-dom";
-
->>>>>>> portfolio/main
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,10 +18,7 @@ const Navbar = () => {
           <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
           <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
           <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
-<<<<<<< HEAD
           <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
-=======
->>>>>>> portfolio/main
           <li><a href="#work" onClick={() => setMenuOpen(false)}>Work</a></li>
           <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>

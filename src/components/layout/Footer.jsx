@@ -6,17 +6,10 @@ const Footer = () => (
       <div className="footer-container container grid">
         <div>
           <h1 className="footer-title">Guillermo</h1>
-<<<<<<< HEAD
           <span className="footer-subtitle">Full Stack Developer</span>
         </div>
         <ul className="footer-links">
           <li><a href="#experience" className="footer-link">Experience</a></li>
-=======
-          <span className="footer-subtitle">Frontend Developer</span>
-        </div>
-        <ul className="footer-links">
-          <li><a href="#services" className="footer-link">Services</a></li>
->>>>>>> portfolio/main
           <li><a href="#work" className="footer-link">Work</a></li>
           <li><a href="#contact" className="footer-link">Contact</a></li>
         </ul>

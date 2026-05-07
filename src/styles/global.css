@@ -568,9 +568,9 @@ button, input { border: none; outline: none; }
   font-size: .65rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.06rem;
   padding: .15rem .55rem; border-radius: .25rem;
-  background: hsla(from #00d9b8 h s l / .15);
+  background: hsla(174, 100%, 42%, 0.15);
   color: var(--accent);
-  border: 1px solid hsla(from #00d9b8 h s l / .35);
+  border: 1px solid hsla(174, 100%, 42%, 0.35);
   flex-shrink: 0;
 }
 

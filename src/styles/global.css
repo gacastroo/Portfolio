@@ -1433,3 +1433,43 @@ button, input { border: none; outline: none; }
     align-items: flex-start;
   }
 }
+/* ── Language Toggle ─────────────────────────────────── */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--accent);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.lang-toggle:hover { transform: scale(1.08); box-shadow: 0 0 16px hsla(174, 100%, 42%, 0.5); }
+
+.lang-flag {
+  font-size: 1.1rem;
+  opacity: 0.4;
+  transition: opacity 0.2s, filter 0.2s;
+  filter: grayscale(60%);
+}
+
+.lang-flag.active {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.lang-divider {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.75rem;
+  user-select: none;
+}

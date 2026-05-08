@@ -1,52 +1,49 @@
 import React from "react";
 import profileImg from "../../assets/img/profile.png";
+import { useLanguage } from "../../context/LanguageContext";
+import { t } from "../../i18n/translations";
 
-const About = () => (
-  <section className="about section" id="about">
-    <h2 className="section-title" data-heading="My Intro">About Me</h2>
+const About = () => {
+  const { lang } = useLanguage();
+  const a = t.about;
 
-    <div className="about-container container grid">
-      <img
-        src={profileImg}
-        alt="About Guillermo"
-        className="about-img"
-      />
+  return (
+    <section className="about section" id="about">
+      <h2 className="section-title" data-heading={a.sectionHeading[lang]}>{a.title[lang]}</h2>
 
-      <div className="about-data">
-        <h3 className="about-heading">
-          Hi, I'm Guillermo Castro, based in Madrid
-        </h3>
-        <p className="about-description">
-          I enjoy analysing systems and shaping secure, functional and well-structured solutions,
-          whether through code or security event analysis. I like learning new technologies,
-          solving problems with an analytical mindset and contributing in collaborative environments.
-        </p>
+      <div className="about-container container grid">
+        <img src={profileImg} alt="About Guillermo" className="about-img" />
 
-        <div className="about-info">
-          <div className="about-box">
-            <i className="uil uil-award about-icon" />
-            <h3 className="about-title">Experience</h3>
-            <span className="about-subtitle">Internship 2025</span>
+        <div className="about-data">
+          <h3 className="about-heading">{a.heading[lang]}</h3>
+          <p className="about-description">{a.description[lang]}</p>
+
+          <div className="about-info">
+            <div className="about-box">
+              <i className="uil uil-award about-icon" />
+              <h3 className="about-title">{a.box1Title[lang]}</h3>
+              <span className="about-subtitle">{a.box1Sub[lang]}</span>
+            </div>
+            <div className="about-box">
+              <i className="uil uil-suitcase-alt about-icon" />
+              <h3 className="about-title">{a.box2Title[lang]}</h3>
+              <span className="about-subtitle">{a.box2Sub[lang]}</span>
+            </div>
+            <div className="about-box">
+              <i className="uil uil-shield-check about-icon" />
+              <h3 className="about-title">{a.box3Title[lang]}</h3>
+              <span className="about-subtitle">{a.box3Sub[lang]}</span>
+            </div>
           </div>
-          <div className="about-box">
-            <i className="uil uil-suitcase-alt about-icon" />
-            <h3 className="about-title">Completed</h3>
-            <span className="about-subtitle">10+ Projects</span>
-          </div>
-          <div className="about-box">
-            <i className="uil uil-shield-check about-icon" />
-            <h3 className="about-title">Focus</h3>
-            <span className="about-subtitle">Web & Security</span>
-          </div>
+
+          <a href="#contact" className="button">
+            <i className="uil uil-navigator button-icon" />
+            {a.cta[lang]}
+          </a>
         </div>
-
-        <a href="#contact" className="button">
-          <i className="uil uil-navigator button-icon" />
-          Contact Me
-        </a>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default About;

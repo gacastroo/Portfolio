@@ -1,36 +1,46 @@
 import React, { useState } from "react";
 import { skillsData } from "../data/skillsData";
 import "../../styles/skills.css";
-
-const tagStyles = {
-  experiencia: "tag-exp",
-  formación: "tag-cert",
-  prácticas: "tag-prac",
-};
+import { useLanguage } from "../../context/LanguageContext";
+import { t } from "../../i18n/translations";
 
 const Skills = () => {
   const [active, setActive] = useState(0);
+  const { lang } = useLanguage();
+  const s = t.skills;
   const current = skillsData[active];
+
+  const tagClass = {
+    experiencia: "tag-exp",
+    formación:   "tag-cert",
+    prácticas:   "tag-prac",
+  };
+
+  const categoryTitle = (title) =>
+    s.categories[title]?.[lang] ?? title;
+
+  const tagLabel = (tag) =>
+    s.tags[tag]?.[lang] ?? tag;
 
   return (
     <section className="skills section" id="skills">
       <div className="skills-container container grid">
         <div className="skills-header-row">
-          <h2 className="section-title" data-heading="Tech Stack">Habilidades</h2>
+          <h2 className="section-title" data-heading={s.sectionHeading[lang]}>{s.title[lang]}</h2>
           <span className="section-name">Guillermo Castro Abarca</span>
         </div>
 
         <div className="skills-tabs" role="tablist" aria-label="Skill categories">
-          {skillsData.map((s, i) => (
+          {skillsData.map((sk, i) => (
             <button
-              key={s.id}
+              key={sk.id}
               type="button"
               role="tab"
               aria-selected={active === i}
-              className={`skills-tab ${active === i ? `active ${s.color}` : ""}`}
+              className={`skills-tab ${active === i ? `active ${sk.color}` : ""}`}
               onClick={() => setActive(i)}
             >
-              {s.title}
+              {categoryTitle(sk.title)}
             </button>
           ))}
         </div>
@@ -41,8 +51,8 @@ const Skills = () => {
               <span className={`pill-dot dot-${current.color}`} />
               {skill.name}
               {skill.tag && (
-                <span className={`pill-tag ${tagStyles[skill.tag]}`}>
-                  {skill.tag}
+                <span className={`pill-tag ${tagClass[skill.tag]}`}>
+                  {tagLabel(skill.tag)}
                 </span>
               )}
             </div>
@@ -56,7 +66,7 @@ const Skills = () => {
               <span className="exp-date">{current.experience.date}</span>
             </div>
             <ul className="exp-bullets">
-              {current.experience.bullets.map((b) => (
+              {s.expBullets[lang].map((b) => (
                 <li key={b}>{b}</li>
               ))}
             </ul>
@@ -69,8 +79,8 @@ const Skills = () => {
               <i className="uil uil-award" />
             </div>
             <div>
-              <p className="cert-title">{current.cert.title}</p>
-              <span className="cert-sub">{current.cert.sub}</span>
+              <p className="cert-title">{s.certTitle[lang]}</p>
+              <span className="cert-sub">{s.certSub[lang]}</span>
             </div>
           </div>
         )}

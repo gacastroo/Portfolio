@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/global.css";
+import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./components/sections/Home";
@@ -12,7 +13,7 @@ import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <Navbar />
       <main className="main">
         <Home />
@@ -24,7 +25,7 @@ function App() {
         <Contact />
         <Footer />
       </main>
-    </>
+    </LanguageProvider>
   );
 }
 

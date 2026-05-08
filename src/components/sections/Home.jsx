@@ -1,7 +1,13 @@
 import React from "react";
 import profileImg from "../../assets/img/profile.jpg";
+import { useLanguage } from "../../context/LanguageContext";
+import { t } from "../../i18n/translations";
 
-const Home = () => (
+const Home = () => {
+  const { lang } = useLanguage();
+  const h = t.home;
+
+  return (
     <section className="home" id="home">
       <div className="home-container container">
 
@@ -55,7 +61,7 @@ const Home = () => (
               <i className="uil uil-shield-check badge-icon" />
               <div className="badge-content">
                 <span className="badge-title">Cybersecurity</span>
-                <span className="badge-libs">Risk · Networks · Data Protection</span>
+                <span className="badge-libs">{h.badge3[lang]}</span>
               </div>
             </div>
           </div>
@@ -63,15 +69,13 @@ const Home = () => (
 
         <div className="home-data">
           <h1 className="home-title">
-            Hi, I&rsquo;m <span className="home-title-name">Guillermo Castro</span>
+            {h.greeting[lang]}&nbsp;<span className="home-title-name">Guillermo Castro</span>
           </h1>
-          <h3 className="home-subtitle">Full Stack Developer</h3>
-          <p className="home-description">
-            Web developer focused on secure, functional and well-structured solutions across backend, frontend and system monitoring.
-          </p>
+          <h3 className="home-subtitle">{h.subtitle[lang]}</h3>
+          <p className="home-description">{h.description[lang]}</p>
           <a href="#about" className="button">
             <i className="uil uil-user button-icon" />
-            More About Me!
+            {h.cta[lang]}
           </a>
         </div>
 
@@ -80,7 +84,7 @@ const Home = () => (
             <div className="info-item">
               <i className="uil uil-envelope-edit info-icon" />
               <div>
-                <h3 className="info-title">Email</h3>
+                <h3 className="info-title">{h.emailLabel[lang]}</h3>
                 <span className="info-subtitle">guillermoandca@gmail.com</span>
               </div>
             </div>
@@ -99,13 +103,14 @@ const Home = () => (
           <div className="info-item">
             <i className="uil uil-map-marker info-icon" />
             <div>
-              <h3 className="info-title">Location</h3>
-              <span className="info-subtitle">Madrid, Spain</span>
+              <h3 className="info-title">{h.locationLabel[lang]}</h3>
+              <span className="info-subtitle">{h.locationVal[lang]}</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-);
+  );
+};
 
 export default Home;

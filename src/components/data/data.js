@@ -50,13 +50,13 @@ export const workData = [
       created: "2025",
       tech: "React, JavaScript, CSS",
       role: "Full Stack",
-      link: "https://lore-weaver-1zpq.vercel.app/",
+      link: "https://github.com/gacastroo/LoreWeaver",
     },
   },
   {
     id: 2,
     filter: "web",
-    img: "",
+    img: "/git.png",
     title: "Guia Github",
     details: {
       subtitle: "Web",
@@ -72,7 +72,7 @@ export const workData = [
   {
     id: 3,
     filter: "web",
-    img: "",
+    img: "/porfolioPersonal.png",
     title: "Portfolio Personal",
     details: {
       subtitle: "Web",
@@ -104,7 +104,7 @@ export const workData = [
   {
     id: 5,
     filter: "web",
-    img: "",
+    img: "/paginaPort.png",
     title: "PaginaPort",
     details: {
       subtitle: "Web",

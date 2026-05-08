@@ -830,7 +830,7 @@ button, input { border: none; outline: none; }
 @media screen and (max-width: 1024px) {
   .section { padding: 3.5rem 0 3rem; }
   .section-title { margin-bottom: 2rem; margin-left: 0.25rem; }
-
+  .home-social { position: static; margin-bottom: 1.5rem; }
   .about-container { grid-template-columns: 1fr; row-gap: 2rem; }
   .about-img { max-width: 300px; }
   .about-data { text-align: center; }

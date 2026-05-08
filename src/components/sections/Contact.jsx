@@ -1,14 +1,43 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email && message) setSent(true);
+ const handleSubmit = (e) => {
+  e.preventDefault();
+
+  if (!email || !message) return;
+
+  const templateParams = {
+    name: email,
+    email: email,
+    message: message,
+    time: new Date().toLocaleString()
   };
+
+  setLoading(true);
+  emailjs
+    .send(
+      "service_7b1pwr4",
+      "template_jeletj7",
+      templateParams,
+      "2Tavmc8mYUXBFrLql"
+    )
+    .then((res) => {
+      console.log("SUCCESS!", res.status, res.text);
+      setSent(true);
+    })
+    .catch((error) => {
+      console.error("FAILED...", error.text || error);
+    })
+      .finally(() => setLoading(false));
+    
+};
 
   return (
     <section className="contact section" id="contact">
@@ -79,9 +108,8 @@ const Contact = () => {
                   required
                 />
               </div>
-              <button type="submit" className="ctc-send">
-                Send message
-                <i className="uil uil-message ctc-send-icon" />
+              <button type="submit" className="ctc-send" disabled={loading}>
+                {loading ? "Sending..." : "Send message"}
               </button>
             </form>
           )}
